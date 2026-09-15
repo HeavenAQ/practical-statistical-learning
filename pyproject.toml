@@ -1,0 +1,23 @@
+[project]
+name = "psl"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [{ name = "Chen Yi Min", email = "891118heaven@gmail.com" }]
+requires-python = ">=3.12"
+dependencies = [
+    "matplotlib>=3.11.2",
+    "numpy>=2.5.3",
+    "ray>=2.58.0",
+    "scikit-learn>=1.9.1",
+    "scipy>=1.18.1",
+    "torch>=2.14.0",
+    "ucimlrepo>=0.0.7",
+]
+
+[project.scripts]
+psl = "psl:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
